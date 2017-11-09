@@ -28,9 +28,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  testTxt: PropTypes.string.isRequired,
-  testNum: PropTypes.number.isRequired
-
+  testTxt: PropTypes.string.isRequired
 }
 
 App.defaultProps = {
