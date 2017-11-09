@@ -3,16 +3,21 @@ import PropTypes from 'prop-types';
 
 class App extends React.Component {
   constructor(){
-    super(); // super assign the current context to the keyword ==> athis
+    super(); // super assign the current context to the keyword ==> this
     this.state = {
       txt: 'this is the state txt',
       num: 0
     }
   }
+  /**
+   * Update the 'txt' and 'num' states.
+   * @param {Event} e
+   */
   update( e ){
     this.setState({txt: e.target.value});
     this.setState({num: e.target.value.length})
   }
+
   render(){
   // let propValue = this.props.testTxt;
     return (

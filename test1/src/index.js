@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import ChildPropsExampleApp from './ChildPropsExampleApp'
 import TitleApp from './TitleApp'
+import NormalizeAndSyntheticEvent from './NormalizeAndSyntheticEvent'
 
 ReactDOM.render(
   <TitleApp />, document.getElementById('title')
@@ -14,4 +15,8 @@ ReactDOM.render(
 
 ReactDOM.render(
   <ChildPropsExampleApp />, document.getElementById('childPropsExample')
+)
+
+ReactDOM.render(
+  <NormalizeAndSyntheticEvent />, document.getElementById('normalizeAndSyntheticEvent')
 )
