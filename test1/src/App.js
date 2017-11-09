@@ -19,7 +19,7 @@ class App extends React.Component {
     <div>
       <h1>Hello Fucking World 2</h1>
       <div>
-        <input type="text" onChange={this.update.bind(this)}/>
+        <Widget update={this.update.bind(this)}/>
         <b> {this.state.txt} - {this.state.num}</b>
       </div>
     </div>
@@ -36,5 +36,9 @@ App.propTypes = {
 App.defaultProps = {
   testTxt: "This is the default text for 'testText'"
 }
+
+
+const Widget = (props) =>
+<input type="text" onChange={props.update} />
 
 export default App
