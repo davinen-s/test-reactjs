@@ -30,6 +30,25 @@
 		"description": "Generate the react-dom import"
 	},
 
+	"constructor": {
+		"prefix": "defConst",
+		"body": [
+			"constructor(){",
+			"  super();",
+			"  $1",
+			"}"
+		],
+		"description": "constructor stub."
+	},
+
+	"Set state": {
+		"prefix": "setState",
+		"body": [
+			"this.setState({${1: stateVariableName}: ${2: stateVariableValue}});"
+		],
+		"description": "setState stub."
+	},
+
 	"Initialize state": {
 		"prefix": "thiss",
 		"body": [
@@ -38,8 +57,22 @@
 		"description": "Stub for state initialization."
 	},
 
-	"Class template": {
-		"prefix": "classTempl",
+	"Simple Class template": {
+		"prefix": "simpleClassTemplate",
+		"body": [
+			"import React from 'react';",
+			" ",
+			" ",
+			"class ${1:className} extends React.Component {",
+			"  ",
+			"  ${2: constructor}",
+			"}"
+		],
+		"description": "Generate the template for a react class."
+	},
+
+	"Full Class template": {
+		"prefix": "fullClassTemplate",
 		"body": [
 			"import React from 'react';",
 			" ",
