@@ -8,6 +8,8 @@ import NodeReferenceExample from './NodeReferenceExample'
 import ComponentLifeCycleButtons from './ComponentLifeCycle'
 import PropsUpdateComponent from './PropsUpdateComponent'
 import MapCreateComponent from './MapCreateComponent'
+import HigherOrderComponent from './HigherOrderComponent'
+import JsxLiveCompilerButton from './JsxLiveCompiler'
 
 ReactDOM.render(
   <TitleApp />, document.getElementById('title')
@@ -39,4 +41,12 @@ ReactDOM.render(
 
 ReactDOM.render(
   <MapCreateComponent />, document.getElementById('mapCreateComponent')
+)
+
+ReactDOM.render(
+  <HigherOrderComponent />, document.getElementById('higherOrderComponent')
+)
+
+ReactDOM.render(
+  <JsxLiveCompilerButton />, document.getElementById('jsxLiveCompiler')
 )
