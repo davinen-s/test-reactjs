@@ -30,6 +30,14 @@
 		"description": "Generate the react-dom import"
 	},
 
+	"Initialize state": {
+		"prefix": "thiss",
+		"body": [
+			"this.state = { ${1: stateName}: ${2: stateValue}};"
+		],
+		"description": "Stub for state initialization."
+	},
+
 	"Class template": {
 		"prefix": "classTempl",
 		"body": [
@@ -87,8 +95,7 @@
 			"* Function to execute after component has been updated.",
 			"*/",
 			"componentDidUpdate(prevProps, prevState){",
-			"  ",
-		  "  return $0",
+		  "  $0",
 			"}"
 		],
 		"description": "Generate the template for the function componentDidUpdate."
