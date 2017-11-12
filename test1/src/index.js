@@ -6,6 +6,7 @@ import TitleApp from './TitleApp'
 import NormalizeAndSyntheticEvent from './NormalizeAndSyntheticEvent'
 import NodeReferenceExample from './NodeReferenceExample'
 import ComponentLifeCycleButtons from './ComponentLifeCycle'
+import PropsUpdateComponent from './PropsUpdateComponent'
 
 ReactDOM.render(
   <TitleApp />, document.getElementById('title')
@@ -29,4 +30,8 @@ ReactDOM.render(
 
 ReactDOM.render(
   <ComponentLifeCycleButtons />, document.getElementById('componentLifeCycleButtons')
+)
+
+ReactDOM.render(
+  <PropsUpdateComponent />, document.getElementById('propsUpdateComponent')
 )
