@@ -5,6 +5,7 @@ import ChildPropsExampleApp from './ChildPropsExampleApp'
 import TitleApp from './TitleApp'
 import NormalizeAndSyntheticEvent from './NormalizeAndSyntheticEvent'
 import NodeReferenceExample from './NodeReferenceExample'
+import ComponentLifeCycleButtons from './ComponentLifeCycle'
 
 ReactDOM.render(
   <TitleApp />, document.getElementById('title')
@@ -24,4 +25,8 @@ ReactDOM.render(
 
 ReactDOM.render(
   <NodeReferenceExample />, document.getElementById('nodeReferenceExample')
+)
+
+ReactDOM.render(
+  <ComponentLifeCycleButtons />, document.getElementById('componentLifeCycleButtons')
 )
