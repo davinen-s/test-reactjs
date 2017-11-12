@@ -54,11 +54,12 @@
 			"  * render method.",
 			"  */",
 			"  render(){",
-			"    return $2",
+			"    $2",
+			"    return $3",
 			"  }",
 			"}"
 		],
-		"description": "Generate the template a react class."
+		"description": "Generate the template for a react class."
 	},
 
 	"componentWillReceiveProps": {
@@ -72,6 +73,19 @@
 			"}"
 		],
 		"description": "Generate the template for the function componentWillReceiveProps."
+	},
+
+	"componentWillMount": {
+		"prefix": "cwm",
+		"body": [
+			"/**",
+			"* $1.",
+			"*/",
+			"componentWillMount(){",
+			"  $0",
+			"}"
+		],
+		"description": "Stub for component will mount."
 	},
 
 	"shouldComponentUpdate": {

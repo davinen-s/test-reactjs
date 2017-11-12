@@ -7,6 +7,7 @@ import NormalizeAndSyntheticEvent from './NormalizeAndSyntheticEvent'
 import NodeReferenceExample from './NodeReferenceExample'
 import ComponentLifeCycleButtons from './ComponentLifeCycle'
 import PropsUpdateComponent from './PropsUpdateComponent'
+import MapCreateComponent from './MapCreateComponent'
 
 ReactDOM.render(
   <TitleApp />, document.getElementById('title')
@@ -34,4 +35,8 @@ ReactDOM.render(
 
 ReactDOM.render(
   <PropsUpdateComponent />, document.getElementById('propsUpdateComponent')
+)
+
+ReactDOM.render(
+  <MapCreateComponent />, document.getElementById('mapCreateComponent')
 )
